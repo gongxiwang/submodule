@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+".\breath_led configuration\stm32f1xx_hal_gpio_ex.o"
+".\breath_led configuration\stm32f1xx_hal_rcc.o"
+".\breath_led configuration\stm32f1xx_hal.o"
+".\breath_led configuration\stm32f1xx_hal_flash.o"
+".\breath_led configuration\stm32f1xx_hal_tim_ex.o"
+".\breath_led configuration\stm32f1xx_hal_tim.o"
+".\breath_led configuration\stm32f1xx_hal_cortex.o"
+".\breath_led configuration\stm32f1xx_hal_dma.o"
+".\breath_led configuration\stm32f1xx_hal_gpio.o"
+".\breath_led configuration\stm32f1xx_hal_flash_ex.o"
+".\breath_led configuration\stm32f1xx_hal_rcc_ex.o"
+".\breath_led configuration\stm32f1xx_hal_pwr.o"
+".\breath_led configuration\stm32f1xx_it.o"
+".\breath_led configuration\stm32f1xx_hal_msp.o"
+".\breath_led configuration\main.o"
+".\breath_led configuration\stm32f1xx_assert.o"
+".\breath_led configuration\startup_stm32f103xb.o"
+".\breath_led configuration\system_stm32f1xx.o"
+".\breath_led configuration\bsp_led.o"
+".\breath_led configuration\bsp_breath_led.o"
+--library_type=microlib --strict --scatter ".\Breath_LED Configuration\Breath_LED Configuration.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Breath_LED Configuration.map" -o ".\Breath_LED Configuration\Breath_LED Configuration.axf"
